@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>🍀Luck Test🍀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="shortcut icon"
+        href="https://cdn.glitch.com/98bf613f-2fd1-4312-a45e-1a6c940b1aec%2Ffavicon.ico?1552537067826">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="username-container">
+        <input id="username-input" type="text" autofill="false" password="false" placeholder="player name">
+    </div>
+    <div id="button-container">
+        <button id="start-button">Start Flipping</button>
+        <button id="stop-button" class="hidden">Stop Tossing</button>
+        <button id="flip-button">Change Coin</button>
+        <button id="brag-button" class="hidden">BRAG</button>
+    </div>
+    <div>
+        <h1 id="coinState">
+            <!--       This is filled in programatically -->
+        </h1>
+        <h2 id="server-sent-info" class="hidden">
+            The server sent <span id="server-sent-flip"></span>
+        </h2>
+    </div>
+    <div id="score-board" class="hidden">
+        <div>Wins: <span id="wins"></span></div>
+        <div>Loses: <span id="losses"></span></div>
+    </div>
+    <div style="display:flex">
+        <h1 style="color:black">Wall of Champions</h1> <div class="hidden" id="wall-age">Fun!</div>
+    </div>
+    <div id="leader-board-container">
+        <div id="bronze-container" style="border:1px solid black" class="lb-container">
+            <h2>
+                Bronze Leaders
+            </h2>
+            <table id="leader-board-bronze" class="leaderboard">
+                <!--       This is filled in programatically -->
+            </table>
+        </div>
+        <div id="silver-container" style="border:1px solid black" class=" lb-container">
+            <h2>
+                Silver Leaders
+            </h2>
+            <table id="leader-board-silver" class="leaderboard">
+                <!--       This is filled in programatically -->
+            </table>
+        </div>
+        <div id="gold-container" style="border:1px solid black" class=" lb-container">
+            <h2>
+                Gold Leaders
+            </h2>
+            <table id="leader-board-gold" class="leaderboard">
+                <!--       This is filled in programatically -->
+            </table>
+        </div>
+        <div id="platinum-container" style="border:1px solid black" class="hidden lb-container">
+            <h2>
+                Platinum Leaders
+            </h2>
+            <table id="leader-board-platinum" class="leaderboard">
+                <!--       This is filled in programatically -->
+            </table>
+        </div>
+    </div>
+    <ul id="chat-container">
+        <!--       This is filled in programatically -->
+    </ul>
+
+    <div id="logger">
+        π
+    </div>
+    <script src="client.js"></script>
+</body>
+
+</html>

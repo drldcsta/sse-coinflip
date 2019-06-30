@@ -1,0 +1,30 @@
+#This file is meant to provide a tempate for your 🔑.env file on glitch (or whatever host you use)
+#This is to let you know what you will need to provide when you initially set this up. 
+#DO NOT PUT PRIVATE DATA IN THIS FILE
+#Let me say that again
+# ____   ___    _   _  ___ _____   ____  _   _ _____
+#|  _ \ / _ \  | \ | |/ _ \_   _| |  _ \| | | |_   _|
+#| | | | | | | |  \| | | | || |   | |_) | | | | | |
+#| |_| | |_| | | |\  | |_| || |   |  __/| |_| | | |
+#|____/ \___/  |_| \_|\___/ |_|   |_|    \___/  |_|
+
+# ____  ____  _____     ___  _____ _____   ____    _  _____  _      ___ _   _
+#|  _ \|  _ \|_ _\ \   / / \|_   _| ____| |  _ \  / \|_   _|/ \    |_ _| \ | |
+#| |_) | |_) || | \ \ / / _ \ | | |  _|   | | | |/ _ \ | | / _ \    | ||  \| |
+#|  __/|  _ < | |  \ V / ___ \| | | |___  | |_| / ___ \| |/ ___ \   | || |\  |
+#|_|   |_| \_\___|  \_/_/   \_\_| |_____| |____/_/   \_\_/_/   \_\ |___|_| \_|
+
+# _____ _   _ ___ ____    _____ ___ _     _____
+#|_   _| | | |_ _/ ___|  |  ___|_ _| |   | ____|
+#  | | | |_| || |\___ \  | |_   | || |   |  _|
+#  | | |  _  || | ___) | |  _|  | || |___| |___
+#  |_| |_| |_|___|____/  |_|   |___|_____|_____|
+
+######
+#Everything below this line is what you want to copy into your 🔑.env
+PAPERTRAIL_HOST=
+PAPERTRAIL_PORT=
+FASTLY_PURGER_KEY=
+FASTLY_SERVICE_ID=
+DELICIOUS_COOKIE=
+FASTLY_DOMAIN=

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+h2 { 
+ margin: 0 
+}
+
+#leader-board-container {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  
+}
+
+#logger{
+     position:absolute;
+     bottom:0;
+     right:0;
+}
+
+.hidden {
+ display: none; 
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+

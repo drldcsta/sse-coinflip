@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script>
+      
+      function resetLeaders() {
+        console.log("click click")
+        fetch("/admin/resetleaderboard",{
+          method: 'PUT'
+        })
+      }
+      function drop_hammer(){
+        let data = `item_key=${document.getElementById("banhammer_input").value}&item_value=fo_sho`
+        fetch("/banhammer",{
+          method: 'POST',
+          body: data,
+          headers: {
+           'Content-Type': 'application/x-www-form-urlencoded',
+         }
+       })
+        .then(res => res.json())
+        .then(json => console.table(json))
+      return false
+      }
+      function reset(){
+        console.log("clicky")
+        fetch("/admin/resetcache",{
+          method: 'PUT'
+        })
+          .then(res => console.log(res))
+      }
+      function randNum(min,max,round=true) {
+        if (round == true){
+          return Math.floor(Math.random()*(max-min+1)+min);
+        } else {
+          return (Math.random()*(max-min+1)+min).toFixed(2)
+        }
+      }
+      function eraseCookie(name) {   
+        document.cookie = name+'=; Max-Age=-99999999;';  
+      }
+    </script>
+</head>
+
+<body>
+  <div id="banhammer">
+    <form autocomplete="off" onsubmit="drop_hammer();return false;" method="post">
+      <input type="text" placeholder="drop the banhammer?" id="banhammer_input" name="ua">
+      <button type="button" onclick="drop_hammer()">BAN EM!</button>
+    </form>
+  </div>
+  <div id="reset_button">
+    <button type="button" onclick="reset();">
+      CLEAR CACHES
+    </button>
+  </div>
+  <div id="leaderboard">
+    <button type="button" onclick="resetLeaders();">
+      RESET LEADERBOARD
+    </button>
+  </div>
+   <div id="logout">
+    <button type="button" onclick="eraseCookie('auth');location.reload()">
+      LOG OUT
+    </button>
+  </div>
+</body>
+<!--     [{"user":"Chester","total":655,"percent":52.82,"time":1552976235},{"user":"Sebastian","total":35,"percent":62.86,"time":1553007663},{"user":"Sebastian","total":978,"percent":52.97,"time":1553009755},{"user":"Sebastian","total":1429,"percent":52.34,"time":1553010337},{"user":"Donatello","total":16,"percent":56.25,"time":1553011176},{"user":"Donatello","total":238,"percent":50.84,"time":1553011472},{"user":"Donatello","total":860,"percent":51.51,"time":1553012311},{"user":"Donatello","total":1453,"percent":50.24,"time":1553013175},{"user":"Donatello","total":1223,"percent":51.02,"time":1553015454},{"user":"Donatello","total":180,"percent":39.44,"time":1553033917},{"user":"Leonardo","total":55,"percent":54.55,"time":1553384334},{"user":"Leonardo","total":6801,"percent":50.26,"time":1553457906}] -->
+
+</html>

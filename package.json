@@ -1,0 +1,37 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "luck-test",
+  "version": "0.0.1",
+  "description": "A example app using Server Sent Events, PaperTrail Logs, and Fastly CDN.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "sse-pubsub": "^1.2.1",
+    "winston": "^2.3.0",
+    "winston-papertrail": "^1.0.5",
+    "body-parser": "^1.18.3",
+    "morgan": "^1.9.1",
+    "express-winston": "^3.1.0",
+    "express-cache-controller": "^1.1.0",
+    "fastly-promises": "^0.9.0",
+    "node-fetch": "^2.3.0",
+    "cookie-parser": "^1.4.4"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
